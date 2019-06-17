@@ -216,7 +216,7 @@ construct_runtime!(
 		Indices: indices,
 		Balances: balances,
 		Sudo: sudo,
-        Contract: contract::{Module, Call, Storage, Event<T>, Config<T>},
+        Contract: contract::{ default },
 		// Used for the module template in `./template.rs`
 		TemplateModule: template::{Module, Call, Storage, Event<T>},
 	}
