@@ -8,6 +8,7 @@ std = [
     'runtime-io/std',
     'support/std',
     'balances/std',
+    'contract/std',
     'executive/std',
     'aura/std',
     'indices/std',
@@ -21,6 +22,8 @@ std = [
     'consensus-aura/std',
     'offchain-primitives/std',
 ]
+
+
 [dependencies.aura]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
@@ -31,6 +34,12 @@ rev = '783ca1892892454e05e234cda5f7a2e42a54461e'
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-balances'
+rev = '783ca1892892454e05e234cda5f7a2e42a54461e'
+
+[dependencies.contract]
+default_features = false
+git = 'https://github.com/paritytech/substrate.git'
+package = 'srml-contract'
 rev = '783ca1892892454e05e234cda5f7a2e42a54461e'
 
 [dependencies.client]
